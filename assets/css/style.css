@@ -344,9 +344,9 @@ section{
 }
 
 /* --------banner--------- */
-.banner{
+/* .banner{
     margin: auto;
-}
+} */
 .contact_banner{
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
@@ -489,6 +489,9 @@ h1.banner_heading {
 }
 .icon_box {
     text-align: center;
+}
+.icon_box span{
+    color: #EBAE00;
 }
 .icon_box .heading_4{
     color: #EBAE00 !important;
