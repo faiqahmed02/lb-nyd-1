@@ -20,6 +20,24 @@ a:hover {
     z-index: 997;
     padding: 20px 0;
 }
+.number{
+    text-align: right;
+    font-family: 'poppins';
+    font-size: 25px;
+    font-weight: 600;
+    color: #ffffff;
+    vertical-align: middle;
+    margin-top: 10px;
+}
+.blink {
+    animation: blinker 1s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
 
 /**
   * Desktop Navigation 
