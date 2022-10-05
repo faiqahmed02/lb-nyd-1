@@ -29,9 +29,29 @@ a:hover {
     vertical-align: middle;
     margin-top: 10px;
 }
+@media only screen and (max-width: 650px) {
+    .number{
+      display: none;
+    }
+}
+
+.blink .fa{
+    background-color: #EBAE00;
+    color: #ffffff;
+    font-size: 40px;
+    padding: 12px 15px;
+    border-radius: 50px;
+    position: fixed;
+    z-index: 200;
+    left: 2%;
+    bottom: 3%;
+}
 .blink {
-    animation: blinker 1s linear infinite;
-  }
+    animation: blinker 2s linear infinite;
+}
+.blink-num {
+    animation: blinker 2s linear infinite;
+}
   
   @keyframes blinker {
     50% {
