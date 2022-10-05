@@ -6,6 +6,9 @@ body {
     padding: 0px;
     width: 100%;
 }
+a{
+    text-decoration: none;
+}
 
 a:hover {
     color: #EBAE00;
@@ -27,13 +30,12 @@ a:hover {
     font-weight: 600;
     color: #ffffff;
     vertical-align: middle;
-    margin-top: 10px;
 }
-@media only screen and (max-width: 650px) {
-    .number{
-      display: none;
-    }
+
+.number a{
+    color: #ffffff;
 }
+
 
 .blink .fa{
     background-color: #EBAE00;
@@ -42,9 +44,18 @@ a:hover {
     padding: 12px 15px;
     border-radius: 50px;
     position: fixed;
-    z-index: 200;
+    z-index: 99999;
     left: 2%;
     bottom: 3%;
+}
+@media only screen and (max-width: 650px) {
+    .number{
+      display: none;
+    }
+    .blink .fa{
+        position: fixed !important;
+        bottom: 32% !important;
+    }
 }
 .blink {
     animation: blinker 2s linear infinite;
@@ -681,6 +692,23 @@ h1.banner_heading {
     padding: 50px;
     border-radius: 20px;
 }
+.package ul.pkg-list {
+    height: 270px;
+    text-align: start;
+    overflow-y: scroll;
+}
+.pkg-list::-webkit-scrollbar {
+  width: 5px;
+}
+.pkg-list::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+.pkg-list::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+.pkg-list::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 
 .section_6 .owl-nav .owl-prev span, .section_6 .owl-nav .owl-next span{
     
@@ -705,8 +733,7 @@ h1.banner_heading {
 }
 .center .package{
     background: linear-gradient(to top right, #ebae00 0%, #fe7b23 100%);
-    box-shadow: 5px 5px 5px 5px  #bdbdbd4b;
-    z-index: 222;
+    z-index: 99999;
     transition: 2s all;
 }
 .center .package h2{
@@ -767,6 +794,12 @@ ul{
     padding-top: 30px;
     padding-bottom: 30px;
     margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 950px) {
+    .sec-left h2{
+      font-size: 40px !important;
+    }
 }
 .sec-left h2{
     font-family: poppins;
@@ -855,16 +888,16 @@ ul{
     color: #016c5f;
 }
 .listing .fa-check{
-    font-size: 25px;
+    font-size: 20px;
     color: #fdca20;
     margin-right: 10px;
 }
 .listing li{
     font-family: 'poppins';
     font-weight: 600;
-    font-size: 22px;
+    font-size: 16px;
     color: #4e4e4e;
-    line-height: 50px;
+    line-height: 40px;
 }
 
 .section_10 {
@@ -885,11 +918,14 @@ ul{
     margin-top: -5px;
     z-index: 100;
 }
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 750px) {
     .discount img {
       width: 100px;
       top: 50px;
       right: 10px;
+    };
+    .discount-price h2{
+        text-align: left !important;
     }
 } 
  
@@ -1019,6 +1055,23 @@ footer
 .foot_1{
     background-color: #016c5f;
 }
+@media only screen and (max-width: 650px){
+    .footer_col{
+        margin-top: 0px !important;
+    }
+}
+
+.contact-us{
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contact-us .address{
+    line-height: 25px;
+    margin-left: 8px;
+}
 .footer_col_1{
     margin-top: 50px;
     margin-bottom: 30px;
@@ -1047,6 +1100,7 @@ footer
     color: #e5fffc;
     line-height: 30px;
 }
+
 .footer_col_1 .social-icon{
     width: 20px;
 }
