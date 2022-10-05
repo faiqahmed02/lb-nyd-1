@@ -923,13 +923,22 @@ ul{
       width: 100px;
       top: 50px;
       right: 10px;
-    };
+    }
     .discount-price h2{
-        text-align: left !important;
+        margin-left: 0 !important;
+    }
+    .discount-price .discount-btn{
+        float: left;
+        margin-top: 10px !important;
+    }
+    .discount-price h4{
+        margin-left: 0 !important;
+    }
+    .discount-price p{
+        margin-left: 0 !important;
     }
 } 
  
-
 
 .discount-price h2{
     font-family: poppins;
